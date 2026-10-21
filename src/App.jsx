@@ -13,7 +13,8 @@ import {
     ArrowUpRight,
     ChevronRight,
     TrendingUp,
-    Target
+    Target,
+    CalendarDays
 } from 'lucide-react';
 
 // SVG Oficial do GitHub
@@ -363,16 +364,16 @@ export default function App() {
                 </div>
             </section>
 
-            {/* Contato */}
+            {/* Contato & Parcerias */}
             <section id="contacto" className="py-20 px-6 bg-slate-900/50 border-t border-slate-800/80">
                 <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-6">
-                    <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">Vamos Conectar</span>
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Pronto para construir o próximo grande produto?</h2>
+                    <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">Contato & Parcerias</span>
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Vamos impulsionar seu produto ou trocar ideias sobre o mercado?</h2>
                     <p className="text-slate-400 max-w-xl leading-relaxed">
-                        Estou sempre aberto a discussões sobre Product Management, regulação no mercado digital, inteligência artificial e novas oportunidades.
+                        Aberto a projetos de consultoria estratégica, novos desafios de liderança e conexões sobre tecnologia, IA e ecossistema digital.
                     </p>
-                    <a href="mailto:seuemail@exemplo.com" className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-xl font-semibold transition text-white shadow-xl shadow-blue-600/25 mt-2">
-                        <Mail className="w-5 h-5" /> Enviar Mensagem
+                    <a href="https://calendar.app.google/6UnFqmyWUybstb2J9" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-xl font-semibold transition text-white shadow-xl shadow-blue-600/25 mt-2">
+                        <CalendarDays className="w-5 h-5" /> Agendar um bate-papo
                     </a>
                 </div>
             </section>
