@@ -378,9 +378,9 @@ export default function App() {
                 </div>
             </section>
 
-            {/* Rodapé */}
+            {/* Footer */}
             <footer className="py-8 border-t border-slate-900 text-center text-xs text-slate-500">
-                © {new Date().getFullYear()} Wellington Gonçalves. Criado com React & Tailwind CSS v4.
+                © {new Date().getFullYear()} Wellington Gonçalves.
             </footer>
 
         </div>
