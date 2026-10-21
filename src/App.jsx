@@ -94,7 +94,7 @@ export default function App() {
     return (
         <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-blue-500 selection:text-white">
 
-            {/* Navegação Superior */}
+            {/* Header */}
             <header className="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-slate-800/80">
                 <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
                     <a href="#" className="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">
@@ -104,10 +104,9 @@ export default function App() {
                         <a href="#pilares" className="hover:text-blue-400 transition">Pilares</a>
                         <a href="#projetos" className="hover:text-blue-400 transition">Case Studies</a>
                         <a href="#sobre" className="hover:text-blue-400 transition">Sobre</a>
-                        <a href="#contacto" className="hover:text-blue-400 transition">Contato</a>
                     </nav>
-                    <a href="mailto:seuemail@exemplo.com" className="text-xs md:text-sm px-4 py-2 rounded-full bg-blue-600/10 border border-blue-500/30 text-blue-400 font-medium hover:bg-blue-600 hover:text-white transition">
-                        Vamos conversar
+                    <a href="#contacto" className="text-xs md:text-sm px-4 py-2 rounded-full bg-blue-600/10 border border-blue-500/30 text-blue-400 font-medium hover:bg-blue-600 hover:text-white transition">
+                        Contato & Parcerias
                     </a>
                 </div>
             </header>
@@ -364,7 +363,7 @@ export default function App() {
                 </div>
             </section>
 
-            {/* Seção de Contato */}
+            {/* Contato */}
             <section id="contacto" className="py-20 px-6 bg-slate-900/50 border-t border-slate-800/80">
                 <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-6">
                     <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">Vamos Conectar</span>
