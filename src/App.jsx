@@ -15,7 +15,8 @@ import {
     TrendingUp,
     Target,
     CalendarDays,
-    GraduationCap
+    GraduationCap,
+    MessageCircle
 } from 'lucide-react';
 
 // SVG Oficial do GitHub
@@ -415,12 +416,42 @@ export default function App() {
                 <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-6">
                     <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">Contato & Parcerias</span>
                     <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Vamos impulsionar seu produto ou trocar ideias sobre o mercado?</h2>
-                    <p className="text-slate-400 max-w-xl leading-relaxed">
+                    <p className="text-slate-200 max-w-xl leading-relaxed">
                         Aberto a projetos de consultoria estratégica, novos desafios de liderança e conexões sobre tecnologia, IA e ecossistema digital.
                     </p>
-                    <a href="https://calendar.app.google/6UnFqmyWUybstb2J9" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-xl font-semibold transition text-white shadow-xl shadow-blue-600/25 mt-2">
-                        <CalendarDays className="w-5 h-5" /> Agendar um bate-papo
-                    </a>
+
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 max-w-3xl mx-auto">
+                        <a
+                            href="https://calendar.app.google/6UnFqmyWUybstb2J9"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-blue-600 hover:bg-blue-500 rounded-xl font-semibold transition text-white shadow-xl shadow-blue-600/25"
+                        >
+                            <CalendarDays className="w-5 h-5" />
+                            <span>Agendar conversa</span>
+                        </a>
+
+                        <a
+                            href="https://wa.me/5511998299127?text=Ol%C3%A1%2C%20Wellington!%20Vi%20o%20teu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/30 rounded-xl font-semibold transition shadow-lg shadow-emerald-500/10"
+                        >
+                            <MessageCircle className="w-5 h-5" />
+                            <span>Falar no WhatsApp</span>
+                        </a>
+
+                        <a
+                            href="mailto:goncalves.wellington.renan@gmail.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 rounded-xl font-semibold transition"
+                        >
+                            <Mail className="w-5 h-5" />
+                            <span>Enviar e-mail</span>
+                        </a>
+                    </div>
+
                 </div>
             </section>
 
