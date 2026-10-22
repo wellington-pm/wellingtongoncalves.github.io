@@ -14,7 +14,8 @@ import {
     ChevronRight,
     TrendingUp,
     Target,
-    CalendarDays
+    CalendarDays,
+    GraduationCap
 } from 'lucide-react';
 
 // SVG Oficial do GitHub
@@ -104,7 +105,7 @@ export default function App() {
                     <nav className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
                         <a href="#pilares" className="hover:text-blue-400 transition">Pilares</a>
                         <a href="#projetos" className="hover:text-blue-400 transition">Case Studies</a>
-                        <a href="#sobre" className="hover:text-blue-400 transition">Sobre</a>
+                        <a href="#sobre" className="hover:text-blue-400 transition">Sobre Mim</a>
                     </nav>
                     <a href="#contacto" className="text-xs md:text-sm px-4 py-2 rounded-full bg-blue-600/10 border border-blue-500/30 text-blue-400 font-medium hover:bg-blue-600 hover:text-white transition">
                         Contato & Parcerias
@@ -299,20 +300,43 @@ export default function App() {
                 </div>
             </section>
 
-            {/* Sobre mim & Trajetória */}
+            {/* Sobre Mim */}
             <section id="sobre" className="py-24 px-6 max-w-6xl mx-auto">
                 <div className="grid md:grid-cols-12 gap-12 items-center">
 
                     <div className="md:col-span-7 flex flex-col gap-6">
-                        <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">Trajetória Profissional</span>
-                        <h2 className="text-3xl font-bold tracking-tight">Product Manager com background em tecnologia e operações</h2>
+                        <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">Product Manager & Consultor de Produtos Digitais | Criando experiências de impacto e aplicando IA nos negócios.</span>
+                        <h2 className="text-3xl font-bold tracking-tight">Conheça o Wellington</h2>
 
                         <p className="text-slate-300 leading-relaxed">
-                            Com mais de 5 anos de experiência na gestão de produtos digitais, liderei iniciativas em e-commerce, marketplace e entretenimento online (iGaming). Minha abordagem combina rigor analítico, arquitetura técnica e obsessão pela experiência do usuário.
+                            Olá! 👋 Sou o Wellington, Product Manager e Consultor de Produtos Digitais. Sou movido por transformar desafios complexos em produtos que simplificam a vida das pessoas e geram resultados reais.
                         </p>
 
-                        <p className="text-slate-400 text-sm leading-relaxed">
-                            Atualmente na <strong>Grupo Aposta Ganha</strong>, supervisiono o ciclo completo da plataforma, garantindo alto nível de conversão e aderência rigorosa às regulamentações e certificações GLI-19 e GLI-33. Anteriormente, atuei no ecossistema de marketplace da Americanas e Riachuelo.
+                        <p className="text-slate-300 leading-relaxed">
+                            Com mais de 5 anos de experiência liderando produtos e plataformas em setores como iGaming, e-commerce e marketplaces, energia e combustíveis, hoje atuo de forma independente prestando consultoria em gestão de produtos, otimização de jornadas digitais e integração de IA na operação.
+                        </p>
+                            
+                        <p className="text-slate-300 leading-relaxed">
+                            Minha trajetória começou no desenvolvimento de software e na engenharia. Essa bagagem técnica me dá a base necessária para unir estratégia de negócios, arquitetura técnica e paixão pela experiência do usuário.
+                        </p>
+
+                        <p className="text-slate-300 landing-relaed">
+                            <strong>Como posso ajudar & fora da rotina:</strong>
+                        </p>
+
+                        <ul className="text-slate-300 space-y-2">
+                            <li>🎯 <strong>Serviços de Consultoria:</strong> Ajudo empresas a estruturar descobertas de produto (discovery), otimizar funis de conversão, garantir aderência regulatória e acelerar fluxos com IA.</li>
+                            <li>💡 <strong>IA & Experimentos:</strong> Exploro ativamente prompt engineering, automações e novas ferramentas de IA para criar protótipos e evoluir entregas.</li>
+                            <li>📝 <strong>Conteúdo & Comunidade:</strong> Escrevo artigos sobre gestão de produtos, mercado regulado e o impacto da inteligência artificial no design de produtos.</li>
+                            <li>🎓 <strong>Aprendizado Contínuo:</strong> Atualmente cursando MBA em Gestão de Produtos (FIAP) e Bacharelado em IA (UNIVESP).</li>
+                        </ul>
+
+                        <p className="text-slate-300 landing-relaed">
+                            Se você precisa de um apoio estratégico e prático para alavancar seu produto ou acelerar suas iniciativas de tecnologia, vamos conversar!
+                        </p>
+
+                        <p className="text-slate-300 landing-relaed">
+                            <strong>Vamos construir algo incrível juntos?</strong>
                         </p>
 
                         <div className="flex flex-wrap gap-3 pt-2">
@@ -323,39 +347,74 @@ export default function App() {
                         </div>
                     </div>
 
-                    <div className="md:col-span-5 p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex flex-col gap-6">
-                        <h3 className="text-xl font-bold flex items-center gap-2">
-                            <Target className="text-blue-400 w-5 h-5" /> Ferramentas & Stack
-                        </h3>
+                    <div className="md:col-span-5 flex flex-col gap-6">
 
-                        <div className="space-y-4 text-sm text-slate-300">
-                            <div>
-                                <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Discovery & Gestão</div>
-                                <div className="flex flex-wrap gap-2">
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Jira</span>
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Confluence</span>
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Miro</span>
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Azure DevOps</span>
+                        <div className="md:col-span-5 p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex flex-col gap-6">
+                            <h3 className="text-xl font-bold flex items-center gap-2">
+                                <GraduationCap className="text-blue-400 w-5 h-5" /> Formação
+                            </h3>
+
+                            <div className="space-y-4 text-sm text-slate-300">
+                                <div>
+                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">MBA em Gestão de Produtos Digitais</div>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">FIAP</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Em Andamento</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Inteligência Artificial</div>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">UNIVESP</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Em Andamento</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Gestor da Tecnologia da Informação</div>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">FIAP</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">2022</span>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div>
-                                <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Dados & Analytics</div>
-                                <div className="flex flex-wrap gap-2">
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">SQL</span>
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Power BI</span>
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Google Cloud Platform</span>
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Looker Studio</span>
+                        <div className="md:col-span-5 p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex flex-col gap-6">
+                            <h3 className="text-xl font-bold flex items-center gap-2">
+                                <Target className="text-blue-400 w-5 h-5" /> Ferramentas & Stack
+                            </h3>
+
+                            <div className="space-y-4 text-sm text-slate-300">
+                                <div>
+                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Discovery & Gestão</div>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Jira</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Confluence</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Miro</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Azure DevOps</span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div>
-                                <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Engenharia & IA</div>
-                                <div className="flex flex-wrap gap-2">
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">React</span>
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Tailwind CSS</span>
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Prompt Engineering</span>
-                                    <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">LLM Auditing</span>
+                                <div>
+                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Dados & Analytics</div>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">SQL</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Power BI</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Google Cloud Platform</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Looker Studio</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Engenharia & IA</div>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">React</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Tailwind CSS</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Prompt Engineering</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">LLM Auditing</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
