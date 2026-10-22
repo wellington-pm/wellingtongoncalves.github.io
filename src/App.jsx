@@ -105,9 +105,9 @@ export default function App() {
                     <nav className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
                         <a href="#pilares" className="hover:text-blue-400 transition">Pilares</a>
                         <a href="#projetos" className="hover:text-blue-400 transition">Case Studies</a>
-                        <a href="#sobre" className="hover:text-blue-400 transition">Sobre Mim</a>
+                        <a href="#sobre" className="hover:text-blue-400 transition uppercase">Sobre Mim</a>
                     </nav>
-                    <a href="#contacto" className="text-xs md:text-sm px-4 py-2 rounded-full bg-blue-600/10 border border-blue-500/30 text-blue-400 font-medium hover:bg-blue-600 hover:text-white transition">
+                    <a href="#contacto" className="text-xs md:text-sm px-4 py-2 rounded-full bg-blue-600/10 border border-blue-500/30 text-blue-400 font-medium hover:bg-blue-600 hover:text-white transition uppercase">
                         Contato & Parcerias
                     </a>
                 </div>
@@ -305,58 +305,52 @@ export default function App() {
                 <div className="grid md:grid-cols-12 gap-12 items-center">
 
                     <div className="md:col-span-7 flex flex-col gap-6">
-                        <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">Product Manager & Consultor de Produtos Digitais | Criando experiências de impacto e aplicando IA nos negócios.</span>
-                        <h2 className="text-3xl font-bold tracking-tight">Conheça o Wellington</h2>
+                        <h1 className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-300 leading-snug tracking-tight">Product Manager & Consultor de Produtos Digitais | Criando experiências de impacto e aplicando IA nos negócios.</h1>
+                        <h2 className="text-xl font-bold tracking-tight">Conheça o Wellington</h2>
 
                         <p className="text-slate-300 leading-relaxed">
                             Olá! 👋 Sou o Wellington, Product Manager e Consultor de Produtos Digitais. Sou movido por transformar desafios complexos em produtos que simplificam a vida das pessoas e geram resultados reais.
                         </p>
 
                         <p className="text-slate-300 leading-relaxed">
-                            Com mais de 5 anos de experiência liderando produtos e plataformas em setores como iGaming, e-commerce e marketplaces, energia e combustíveis, hoje atuo de forma independente prestando consultoria em gestão de produtos, otimização de jornadas digitais e integração de IA na operação.
+                            Com mais de 5 anos de experiência liderando produtos e plataformas em setores como iGaming, marketplaces e energia, hoje atuo de forma independente prestando consultoria em gestão de produtos, otimização de jornadas digitais e integração de IA na operação.
                         </p>
                             
                         <p className="text-slate-300 leading-relaxed">
                             Minha trajetória começou no desenvolvimento de software e na engenharia. Essa bagagem técnica me dá a base necessária para unir estratégia de negócios, arquitetura técnica e paixão pela experiência do usuário.
                         </p>
 
-                        <p className="text-slate-300 landing-relaed">
-                            <strong>Como posso ajudar & fora da rotina:</strong>
+                        <p className="text-slate-300 leanding-relaed">
+                            <strong>Como posso ajudar & o que me move:</strong>
                         </p>
-
                         <ul className="text-slate-300 space-y-2">
-                            <li>🎯 <strong>Serviços de Consultoria:</strong> Ajudo empresas a estruturar descobertas de produto (discovery), otimizar funis de conversão, garantir aderência regulatória e acelerar fluxos com IA.</li>
-                            <li>💡 <strong>IA & Experimentos:</strong> Exploro ativamente prompt engineering, automações e novas ferramentas de IA para criar protótipos e evoluir entregas.</li>
-                            <li>📝 <strong>Conteúdo & Comunidade:</strong> Escrevo artigos sobre gestão de produtos, mercado regulado e o impacto da inteligência artificial no design de produtos.</li>
-                            <li>🎓 <strong>Aprendizado Contínuo:</strong> Atualmente cursando MBA em Gestão de Produtos (FIAP) e Bacharelado em IA (UNIVESP).</li>
+                            <li>🎯 <strong>Consultoria de Produto & IA:</strong> Ajudo empresas a estruturar discoveries, otimizar funis e integrar inteligência artificial no dia a dia da operação.</li>
+                            <li>💡 <strong>Experimentação com IA:</strong> Crio protótipos e exploro continuamente engenharia de prompt e novas ferramentas.</li>
+                            <li>📝 <strong>Escrita & Comunidade:</strong> Escrevo artigos sobre gestão de produtos e IA para compartilhar aprendizagens com a comunidade.</li>
                         </ul>
 
-                        <p className="text-slate-300 landing-relaed">
+                        <p className="text-slate-300 leanding-relaed">
                             Se você precisa de um apoio estratégico e prático para alavancar seu produto ou acelerar suas iniciativas de tecnologia, vamos conversar!
                         </p>
 
-                        <p className="text-slate-300 landing-relaed">
+                        <p className="text-slate-300 leanding-relaed">
                             <strong>Vamos construir algo incrível juntos?</strong>
                         </p>
 
-                        <div className="flex flex-wrap gap-3 pt-2">
-                            <span className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">MBA Gestão de Produtos (FIAP)</span>
-                            <span className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Bacharelado em IA (UNIVESP)</span>
-                            <span className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Scrum & Kanban</span>
-                            <span className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">SQL & GCP</span>
-                        </div>
                     </div>
 
                     <div className="md:col-span-5 flex flex-col gap-6">
 
                         <div className="md:col-span-5 p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex flex-col gap-6">
                             <h3 className="text-xl font-bold flex items-center gap-2">
-                                <GraduationCap className="text-blue-400 w-5 h-5" /> Formação
+                                <GraduationCap className="text-blue-400 w-5 h-5" /> Formação & Certificações
                             </h3>
 
                             <div className="space-y-4 text-sm text-slate-300">
+                                <p className="text-xm text-slate-300 leading-relaxed uppercase font-semibold">Formação Acadêmica</p>
+
                                 <div>
-                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">MBA em Gestão de Produtos Digitais</div>
+                                    <div className="text-xs font-semibold text-slate-400 tracking-wider mb-2">MBA em Gestão de Produtos Digitais</div>
                                     <div className="flex flex-wrap gap-2">
                                         <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">FIAP</span>
                                         <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Em Andamento</span>
@@ -364,7 +358,7 @@ export default function App() {
                                 </div>
 
                                 <div>
-                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Inteligência Artificial</div>
+                                    <div className="text-xs font-semibold text-slate-400 tracking-wider mb-2">Inteligência Artificial</div>
                                     <div className="flex flex-wrap gap-2">
                                         <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">UNIVESP</span>
                                         <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Em Andamento</span>
@@ -372,52 +366,45 @@ export default function App() {
                                 </div>
 
                                 <div>
-                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Gestor da Tecnologia da Informação</div>
+                                    <div className="text-xs font-semibold text-slate-400 tracking-wider mb-2">Gestor da Tecnologia da Informação</div>
                                     <div className="flex flex-wrap gap-2">
                                         <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">FIAP</span>
                                         <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">2022</span>
                                     </div>
                                 </div>
+
+                                <p className="text-xm text-slate-300 leading-relaxed uppercase font-semibold">Certificações</p>
+
+                                <div>
+                                    <div className="text-xs font-semibold text-slate-400 tracking-wider mb-2">Métodos & Gestão</div>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Scrum Master</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Kanban</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Product Frameworks</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Compliance & Regulado</div>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">GLI-19</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">GLI-33</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Regulamentação iGaming</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Dados & Tecnologia</div>
+                                    <div className="flex flex-wrap gap-2">
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">GCP</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Cloud LLM</span>
+                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">IA Generativa</span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
-                        <div className="md:col-span-5 p-8 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex flex-col gap-6">
-                            <h3 className="text-xl font-bold flex items-center gap-2">
-                                <Target className="text-blue-400 w-5 h-5" /> Ferramentas & Stack
-                            </h3>
-
-                            <div className="space-y-4 text-sm text-slate-300">
-                                <div>
-                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Discovery & Gestão</div>
-                                    <div className="flex flex-wrap gap-2">
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Jira</span>
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Confluence</span>
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Miro</span>
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Azure DevOps</span>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Dados & Analytics</div>
-                                    <div className="flex flex-wrap gap-2">
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">SQL</span>
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Power BI</span>
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Google Cloud Platform</span>
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Looker Studio</span>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Engenharia & IA</div>
-                                    <div className="flex flex-wrap gap-2">
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">React</span>
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Tailwind CSS</span>
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">Prompt Engineering</span>
-                                        <span className="px-2.5 py-1 rounded bg-slate-800 text-xs">LLM Auditing</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
